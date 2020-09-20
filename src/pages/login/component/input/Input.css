@@ -1,0 +1,12 @@
+.input{
+    border: 1px solid green;
+    border-radius: 0.45rem;
+    color: lightgreen;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+.input--error{
+    border: 1px solid rebeccapurple;
+    color: red;
+}
