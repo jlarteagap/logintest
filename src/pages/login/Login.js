@@ -17,12 +17,15 @@ const Login = () =>{
     function handleChange(name, value){
         if(name === 'userio'){
             setUser(value)
+            setHasError(false)
         } else{
             if(value.length < 6){
                 setpassswordError(true)
+                setHasError(false)
             }else {
                 setpassswordError(false)
                 setPassword(value)
+                setHasError(false)
             }
         }
     }
@@ -50,7 +53,6 @@ const Login = () =>{
 
     function handleSubmit(){
         let account = { user, password}
-
         if(account){
             ifMatch(account);
             
@@ -58,7 +60,9 @@ const Login = () =>{
     }
 
     return(
+
         <div className="login">
+            {isLogin ? "hola" : "no paasa nada"}
             <Title text = "Esto es un titulo enviado por props"/>
             {hasError && 
             <label>Usuario o contraseña incorrectos</label>
@@ -90,7 +94,7 @@ const Login = () =>{
             {passswordError && 
                 <label className="label--error">Contrasenha incorrecta</label>
             }
-            <button onClick = {handleSubmit} >Ingresar</button>
+            <button className="btn" onClick = {handleSubmit} >Ingresar</button>
         </div>
     )
 }

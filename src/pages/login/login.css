@@ -1,6 +1,28 @@
 .login{
+    align-items: center;
+    background: var(--bg);
+    border-radius: .5rem;
+    color: var(--dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    width: 100%;
+    padding: 1.5rem 1rem;
 }
+
+.btn{
+    border: none;
+    background: var(--gren);
+    border-radius: .25rem;
+    color: white;
+    display: block;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: all .5s;
+}
+    .btn:hover, .btn:focus, btn:active{
+        background: var(--orange);
+        border: none
+    }
