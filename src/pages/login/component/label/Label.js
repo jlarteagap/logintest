@@ -3,7 +3,7 @@ import React from 'react';
 
 const Label = ({ text }) => {
     return(
-    <div>{ text }</div>
+    <div className="login__label">{ text }</div>
     )
 }
 

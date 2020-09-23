@@ -1,12 +1,21 @@
-.input{
-    border: 1px solid green;
+.login__input{
+    border: 1px solid var(--dark);
     border-radius: 0.45rem;
-    color: lightgreen;
-    margin: 0;
-    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    color: var(--green);
+    margin: 0.5rem 0;
+    padding: .85rem 1.5rem;
     outline: none;
+    width: 100%;
 }
+    .login__input:focus, .login__input:active{
+        border: 1px solid var(--green);
+    } 
 .input--error{
-    border: 1px solid rebeccapurple;
-    color: red;
+    border: 1px solid var(--orange);
+    color: var(--yellow);
+}
+
+.login__label{
+    text-align: start;
 }

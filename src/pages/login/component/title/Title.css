@@ -1,5 +1,15 @@
 .title--label{
-    font-size: 1.2rem;
+    font-size:2rem;
     color: peru;
     font-weight: 700;
+    white-space: pre-line;
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+    letter-spacing: .5rem;
+    text-align: center;
 }
+
+    .title__description{
+        font-size: .85rem;
+        font-weight: 300;
+    }
